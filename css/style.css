@@ -4,14 +4,22 @@
     --bg-nag: #fff9e8;
     --link-color: #FFA69E;
     --link-color-hover: #dd766d;
-    color: #B37F62;
+    --color-tittle: #dd766d;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+h1{
+    color: var(--color-tittle);
 }
 
 .brand-image{
     background: url(../img/rose-boutique-logo-smart.png);
     background-repeat: no-repeat;
     height: 48px;
-    width: 211px;
+    width: 170px;
 }
 
 .toggle-menu{
@@ -27,7 +35,6 @@
 
 .nav-link{
     color: var(--link-color) !important;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .nav-link:hover{
@@ -62,6 +69,11 @@
     margin-top: -40px;
     margin-left: 15px;
 }
+
+.slide {
+    margin:0px !important;
+   padding: 0px !important;
+  }
 
 @media only screen and (min-width: 768px) {
 
