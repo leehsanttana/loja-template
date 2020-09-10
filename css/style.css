@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root{
-    --bg-nag: #fff9e8;
+    --bg-nav: #fff9e8;
+    --bg-body: #fffdf7;
     --link-color: #FFA69E;
     --link-color-hover: #dd766d;
     --color-tittle: #dd766d;
@@ -11,7 +12,7 @@ body{
     font-family: 'Quicksand', sans-serif !important;
 }
 
-h1{
+h1, h2{
     color: var(--color-tittle);
 }
 
@@ -23,7 +24,11 @@ h1{
 }
 
 .bg-nav{
-    background: var(--bg-nag);
+    background: var(--bg-nav);
+}
+
+.bg-body{
+    background: var(--bg-body);
 }
 
 .nav-link{
@@ -66,7 +71,58 @@ h1{
 .slide {
     margin:0px !important;
    padding: 0px !important;
-  }
+}
+
+.box-product{
+    width: 350px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.box-product-inner{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    transition: .3s ease-in-out;
+}
+
+.botao{
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    position: relative;
+    bottom: -100%;
+    font-size: .9em;
+    transition: .3s ease-in-out !important;
+}
+
+.box-product-inner:hover{
+    background: rgba(255, 249, 232, .5);
+}
+
+.box-product-inner:hover .botao{
+    opacity: 1;
+    bottom: -50%;
+    visibility: visible;
+}
+
+.b-shadow{
+    box-shadow: 0 0.125rem 0.25rem rgba(221, 118, 109, 0.45) !important;
+}
+
+.btn-pink{
+    color: #fff !important;
+    background-color: var(--link-color) !important;
+    border-color: var(--link-color) !important;
+}
+
+.btn-pink:hover{
+    color: #fff !important;
+    background-color: var(--link-color-hover) !important;
+    border-color: var(--link-color-hover) !important;
+}
 
 @media only screen and (min-width: 768px) {
 
