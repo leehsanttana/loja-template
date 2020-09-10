@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root{
+    --bg-nag: #fff9e8;
+    --link-color: #FFA69E;
+    --link-color-hover: #dd766d;
+    color: #B37F62;
+}
+
+.brand-image{
+    background: url(../img/rose-boutique-logo-smart.png);
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 211px;
+}
+
+.toggle-menu{
+    color: var(--link-color-hover);
+    font-size: 1.75rem;
+    transition: .5s ease-in-out;
+    
+}
+
+.bg-nav{
+    background: var(--bg-nag);
+}
+
+.nav-link{
+    color: var(--link-color) !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-link:hover{
+    color: var(--link-color-hover) !important;
+}
+
+.sacola{
+    position: absolute;
+    margin-left: 2rem;
+    padding-right: 1rem;
+    right: 7rem;
+    top: 1.5rem;
+}
+
+.sacola i{
+    font-size: 1.8rem;
+    color: var(--link-color);
+    position: relative;
+}
+
+.sacola i:hover{
+    color: var(--link-color-hover);
+}
+
+.num-produto-sacola{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    margin-top: -40px;
+    margin-left: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .brand-image{
+        background: url(../img/rose-boutique-logo-xs.png);
+        background-repeat: no-repeat;
+        height: 48px;
+        width: 48px;
+    }
+
+    .sacola{
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    
+}
