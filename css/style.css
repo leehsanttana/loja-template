@@ -18,9 +18,7 @@ h1, h2{
 
 .toggle-menu{
     color: var(--link-color-hover);
-    font-size: 1.75rem;
-    transition: .5s ease-in-out;
-    
+    font-size: 1.75rem;   
 }
 
 .bg-nav{
@@ -29,6 +27,37 @@ h1, h2{
 
 .bg-body{
     background: var(--bg-body);
+}
+
+.social-aside{
+    position: absolute;
+    background: #fff9e8;
+    top: 1.5rem;
+    right: 38%;
+    font-size: 1.5rem;
+    
+}
+
+.social-aside ul{
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.social-aside ul li{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.social-aside ul li a{
+    color: var(--link-color-hover);
+    transition: .3s ease-in-out;
+}
+
+.social-aside ul li a:hover{
+    color: var(--link-color);
 }
 
 .nav-link{
@@ -43,7 +72,7 @@ h1, h2{
     position: absolute;
     margin-left: 2rem;
     padding-right: 1rem;
-    right: 7rem;
+    right: 5rem;
     top: 1.5rem;
 }
 
@@ -70,7 +99,7 @@ h1, h2{
 
 .slide {
     margin:0px !important;
-   padding: 0px !important;
+    padding: 0px !important;
 }
 
 .box-product{
@@ -130,6 +159,30 @@ h1, h2{
         position: relative;
         right: 0;
         top: 0;
+    }
+
+    .social-aside{
+        position: fixed;
+        background: #fff9e8;
+        top: 10rem;
+        right: 0;
+        z-index: 10;
+        font-size: 1.5rem;
+        
+    }
+
+    .social-aside ul{
+        list-style-type: none !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-aside ul li{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        display: list-item;
+        border-bottom: 2px solid var(--link-color-hover);
     }
     
 }
