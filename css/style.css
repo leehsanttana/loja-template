@@ -16,6 +16,7 @@ h1, h2{
     color: var(--color-tittle);
 }
 
+
 .toggle-menu{
     color: var(--link-color-hover);
     font-size: 1.75rem;   
@@ -34,7 +35,6 @@ h1, h2{
     background: #fff9e8;
     top: 1.5rem;
     right: 38%;
-    font-size: 1.5rem;
     
 }
 
@@ -77,7 +77,7 @@ h1, h2{
 }
 
 .sacola i{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--link-color);
     position: relative;
 }
@@ -95,6 +95,10 @@ h1, h2{
     color: #fff;
     margin-top: -40px;
     margin-left: 15px;
+}
+
+.num-produto-sacola p{
+    font-size: .80rem;
 }
 
 .slide {
