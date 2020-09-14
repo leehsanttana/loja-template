@@ -163,7 +163,6 @@ h1, h2{
 
 .box-grid{
     width: 100%;
-    background: #fff;
     text-align: center;
     position: relative;
 }
@@ -237,11 +236,15 @@ h1, h2{
     }
 
     .title-grid{
+        opacity: 0;
         width: 150px;
         font-size: 2rem;
         font-weight: 400;
+        position: relative;
         top: 80%;
         left: 30%;
+        transition: .3s ease-in-out !important;
+
     }
 }
 
