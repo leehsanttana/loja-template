@@ -16,7 +16,6 @@ h1, h2{
     color: var(--color-tittle);
 }
 
-
 .toggle-menu{
     color: var(--link-color-hover);
     font-size: 1.75rem;   
@@ -157,6 +156,50 @@ h1, h2{
     border-color: var(--link-color-hover) !important;
 }
 
+.m-img{
+    margin-top: .65rem;
+}
+
+
+.box-grid{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.box-grid-inner{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    transition: .3s ease-in-out;
+}
+
+.title-grid{
+    color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    width: 100px;
+    font-size: 1rem;
+    font-weight: 900;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transition: .3s ease-in-out !important;
+}
+
+.box-grid-inner:hover{
+    background: rgba(229, 137, 128, 0.4);
+}
+
+.box-grid-inner:hover .title-grid{
+    opacity: 1;
+    visibility: visible;
+    top: 40%;
+    transform: rotate(360deg);
+}
+
 @media only screen and (min-width: 768px) {
 
     .sacola{
@@ -189,4 +232,16 @@ h1, h2{
         border-bottom: 2px solid var(--link-color-hover);
     }
     
+    .m-img{
+        margin-top: 1.65rem;
+    }
+
+    .title-grid{
+        width: 150px;
+        font-size: 2rem;
+        font-weight: 400;
+        top: 80%;
+        left: 30%;
+    }
 }
+
