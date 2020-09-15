@@ -185,7 +185,6 @@ h1, h2{
     font-weight: 900;
     position: relative;
     top: 40%;
-    left: 10%;
     transition: .3s ease-in-out !important;
 }
 
@@ -271,3 +270,91 @@ footer{
     }
 }
 
+/* colecao.html */
+
+.btn-filter, .closebtn, .btn-filter{
+    visibility: visible;
+}
+
+.closebtn{
+    visibility: visible;
+    font-size: 2rem;
+    float: right;
+    margin-top: -5px;
+    margin-right: 5px;
+    color: var(--link-color);
+}
+
+.closebtn:hover{
+    color: var(--link-color-hover);
+}
+
+.filter{
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background: #ffffff;
+}
+
+.filter h4{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .btn-filter, .closebtn, .btn-filter{
+        visibility: hidden;
+    }
+
+    .filter{
+        width: 0;
+        position: relative;
+        background: transparent;
+        width: 230px;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+
+    .filter h4{
+        text-align: left;
+    }
+
+    .btn-filter{
+        width: 800px !important;
+    }
+}
+
+.filter-option{
+    cursor: pointer;
+}
+
+.form-check{
+    margin-top: .5rem !important;
+}
+
+.form-check-input{
+    border: 0 !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
+.radio-color {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #c9c9c9;
+}

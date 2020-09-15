@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Projeto Template Loja">
+    <meta name="author" content="Leonam Santana">
+    <meta name="application-name" content="VS Code"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-Loja</title>
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+
+<body>
+    
+    <nav class="navbar navbar-expand-md bg-nav navbar-dark menu">    
+
+        <a class="navbar-brand" href="index.html"><img src="img/rose-boutique-logo-xs.png" alt="Rose-Boutique"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span><i class="toggle-menu fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="colecao.html">Coleção</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Nossa História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contatos.html">Contatos</a>
+                </li>
+            </ul>
+        </div>              
+        <div class="sacola">
+            <a href="#">
+                <i class="fas fa-shopping-bag"></i>
+                <div class="num-produto-sacola rounded-circle"><p>0</p></div>
+            </a>
+        </div>
+        <aside class="social-aside"> 
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" >
+                        <i class="fas fa-envelope"></i></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </nav>
+
+    <main class="container-fluid border border-top-0 border-left-0 border-right-0 py-5" id="main">
+        <a href="index.html">
+            <img src="img/rose-boutique-logo-sm.png" alt="rose-boutique" class=" img-fluid mx-auto d-block">
+        </a>
+    </main>
+
+    <section class="container-fluid">
+        <h2 class="text-center my-4">Nossa Coleção</h2>
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="btn btn-pink btn-filter d-block mx-auto col-5" onclick="openNav()">
+                    Filtro
+                </div>
+            </div>
+        </div>
+
+        <div class="row mx-5">
+
+            <div class="filter" id="mySidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                <h4 class="border border-top-0 border-left-0 border-right-0 py-4">Filtrar Por</h4>
+                <ul class="nav flex-column py-4">
+                    <li class="border border-top-0 border-left-0 border-right-0 pb-4">
+                        <span data-toggle="collapse" data-target="#genero" class="px-4 filter-option">Gênero</span>
+                        
+                        <div id="genero" class="collapse show px-4">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link link-footer">
+                                        <b>Todas</b>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link link-footer">
+                                        Masculino
+                                    </a>                              
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link link-footer">
+                                        Feminino
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border border-top-0 border-left-0 border-right-0 py-4">
+                        <span data-toggle="collapse" data-target="#produtos" class="px-4 filter-option">Produtos</span>
+                        
+                        <div id="produtos" class="collapse px-4">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link link-footer">
+                                        <b>Todos</b>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link link-footer">
+                                        Acessórios
+                                    </a>                              
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link link-footer">
+                                        Roupas
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link link-footer">
+                                        Calçados
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border border-top-0 border-left-0 border-right-0 py-4">
+                        <span data-toggle="collapse" data-target="#preco" class="px-4 filter-option">Preço</span>
+                        <div id="preco" class="collapse px-4">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                        <input type="range" class="form-control-range">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border border-top-0 border-left-0 border-right-0 py-4">
+                        <span data-toggle="collapse" data-target="#cor" class="px-4 filter-option">Cor</span>
+                        
+                        <div id="cor" class="px-4 collapse">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input type="radio" class="form-check-input" name="optradio">
+                                          <span style="background-color:#000" class="radio-color" title="Preto"></span>
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">
+                                            <span style="background-color: #0000ff" class="radio-color" title="Azul"></span>
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">
+                                            <span style="background-color: #800080" class="radio-color" title="Roxo"></span>
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">
+                                            <span style="background-color: #ff0000" class="radio-color" title="Vermelho"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input type="radio" class="form-check-input" name="optradio">
+                                          <span style="background-color:#fff" class="radio-color" title="Branco"></span>
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">
+                                            <span style="background-color: #0ff00f" class="radio-color" title="Verde"></span>
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">
+                                            <span style="background-color: #ffff00" class="radio-color" title="Amarelo"></span>
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">
+                                            <span style="background-color: #ffa500" class="radio-color" title="Laranja"></span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="row d-flex justify-content-center btn-filter">
+                    <div class="col-4">
+                        <button type="clear" class="btn btn-secondary d-block mx-auto col-12" value="Limpar">Limpar</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-pink d-block mx-auto col-12" value="Ok">Ok</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-footer py-3">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3 col-12">
+                <img src="img/rose-boutique-logo-lg.png" alt="Rose Boutique logo" class="mt-4 img-fluid">
+            </div>
+            <div class="col-md-2 col-sm-6 col-6 my-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Ver Coleção
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Nossa História
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-6 my-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Envios e Devoluções
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Política da Loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Métodos de Pagamento
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12">
+                <h3>Newsletter</h3>
+                    <p>Se inscreva para receber todas as nossas novidades em primeira mão!</p>
+                    <div class="input-group mb-3">
+                        
+                        <input type="text" class="form-control" placeholder="Email">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-pink" type="button">Assinar!</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidepanel").style.width = "100%";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/4783fe1c33.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
