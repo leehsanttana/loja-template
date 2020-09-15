@@ -2,7 +2,7 @@
 
 :root{
     --bg-nav: #fff9e8;
-    --bg-body: #fffdf7;
+    --bg-footer: #fffdf7;
     --link-color: #FFA69E;
     --link-color-hover: #dd766d;
     --color-tittle: #dd766d;
@@ -199,6 +199,19 @@ h1, h2{
     transform: rotate(360deg);
 }
 
+footer{
+    background: var(--bg-footer);
+}
+
+footer li{
+    color: #747474 !important;
+}
+
+.link-footer{
+    color: #747474 !important;
+    margin-bottom: -.6rem !important;
+}
+
 @media only screen and (min-width: 768px) {
 
     .sacola{
@@ -210,7 +223,7 @@ h1, h2{
     .social-aside{
         position: fixed;
         background: #fff9e8;
-        top: 10rem;
+        top: 12rem;
         right: 0;
         z-index: 10;
         font-size: 1.5rem;
