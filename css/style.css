@@ -319,6 +319,7 @@ footer{
         height: auto;
         top: 0;
         left: 0;
+        margin-left: 1rem;
     }
 
     .filter h4{
