@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Projeto Template Loja">
+    <meta name="author" content="Leonam Santana">
+    <meta name="application-name" content="VS Code"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-Loja</title>
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+
+<body>
+    
+    <nav class="navbar navbar-expand-md bg-nav navbar-dark menu">    
+
+        <a class="navbar-brand" href="index.html"><img src="img/rose-boutique-logo-xs.png" alt="Rose-Boutique"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span><i class="toggle-menu fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="colecao.html">Coleção</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Nossa História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contatos.html">Contatos</a>
+                </li>
+            </ul>
+        </div>              
+        <div class="sacola">
+            <a href="#">
+                <i class="fas fa-shopping-bag"></i>
+                <div class="num-produto-sacola rounded-circle"><p>0</p></div>
+            </a>
+        </div>
+        <aside class="social-aside"> 
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" >
+                        <i class="fas fa-envelope"></i></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </nav>
+
+    <main class="container-fluid my-5" id="main">
+        <a href="index.html">
+            <img src="img/rose-boutique-logo-sm.png" alt="rose-boutique" class=" img-fluid mx-auto d-block">
+        </a>
+    </main>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-7 "> 
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white">
+                        <li class="breadcrumb-item"><a href="index.html">Página Inicial</a></li>
+                        <li class="breadcrumb-item"><a href="colecao.html">Coleção</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Produto</li>
+                    </ol>
+                </nav>
+
+                <div id="slide-produtos-vendidos" class="carousel slide" data-ride="carousel">           
+                    <div class="carousel-inner border">
+                        <div class="carousel-item active">
+                            <img src="img/produtos/produto5.jpg" alt="foto produto" class="img-fluid mx-auto d-block">  
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/produtos/produto6.jpg" alt="foto produto" class="img-fluid mx-auto d-block">  
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#slide-produtos-vendidos" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#slide-produtos-vendidos" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                  
+                    <ul class="carousel-indicators-p">
+                        <li data-target="#slide-produtos-vendidos" data-slide-to="0" class="active">
+                             <img src="img/produtos/produto5.jpg" alt="" class="img-fluid">
+                        </li>
+                        <li data-target="#slide-produtos-vendidos" data-slide-to="1"> 
+                            <img src="img/produtos/produto6.jpg" alt="" class="img-fluid">
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque reprehenderit minima
+                    doloremque modi voluptatibus tempore dignissimos
+                </p>
+            </div>         
+            <div class="col-md-5 mt-5 pt-2">
+                <h4>Nome Produto</h4>
+                <p>COD. 0001</p>
+
+                <p class="pt-4"><del>R$70,00</del> R$50,00</p>
+
+                <form>
+
+                <select name="tamanho" class="custom-select">
+                    <option selected>Escolha o seu tamanho</option>
+                    <option value="fiat">P</option>
+                    <option value="audi">M</option>
+                    <option value="audi">G</option>
+                    <option value="audi">GG</option>
+                </select>
+                <div class="form-group">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantity" name="quantidade" min="1" max="50" class="custom-control">
+                </div>
+                </form>
+
+                <a href="#" class="nav-link">
+                    <a class="btn btn-pink d-block" href="colecao.html">
+                        <h4>Adicionar à Sacola <i class="fas fa-shopping-bag"></i></h4>
+                    </a>
+                </a>
+                <ul class="nav flex-column mt-4">
+                    <li class="border border-top-0 border-left-0 border-right-0 py-4">
+                        <span data-toggle="collapse" data-target="#caracteristica"><h4>Características do Produtos<i class="ml-5 fas fa-angle-down"></i></i></h4></span>
+                        <div id="caracteristica" class="collapse show">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque harum modi voluptatum distinctio
+                                reiciendis, ipsa impedit reprehenderit excepturi vitae, facere voluptatibus perspiciatis porro quo corrupti
+                                natus. Pariatur blanditiis facere iste.
+                            </p>    
+                        </div>
+                    </li>
+                    <li class="border border-top-0 border-left-0 border-right-0 py-4">
+                        <span data-toggle="collapse" data-target="#politicas"><h4>Políticas de Reembolso<i class="ml-5 fas fa-angle-down"></i></h4></span>
+                        <div id="politicas" class="collapse">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque harum modi voluptatum distinctio
+                                reiciendis, ipsa impedit reprehenderit excepturi vitae, facere voluptatibus perspiciatis porro quo corrupti
+                                natus. Pariatur blanditiis facere iste.
+                            </p>    
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="container-fluid bg-footer py-3">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3 col-12">
+                <img src="img/rose-boutique-logo-lg.png" alt="Rose Boutique logo" class="mt-4 img-fluid">
+            </div>
+            <div class="col-md-2 col-sm-6 col-6 my-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Ver Coleção
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Nossa História
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-6 my-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Envios e Devoluções
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Política da Loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            Métodos de Pagamento
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link link-footer">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12">
+                <h3>Newsletter</h3>
+                    <p>Se inscreva para receber todas as nossas novidades em primeira mão!</p>
+                    <div class="input-group mb-3">
+                        
+                        <input type="text" class="form-control" placeholder="Email">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-pink" type="button">Assinar!</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4783fe1c33.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
