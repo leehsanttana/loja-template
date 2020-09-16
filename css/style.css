@@ -123,10 +123,10 @@ h1, h2{
 .botao{
     visibility: hidden;
     opacity: 0;
-    width: 60%;
+    width: 80%;
     position: relative;
     bottom: -100%;
-    font-size: .6em !important;
+    font-size: .8em !important;
     transition: .3s ease-in-out !important;
 }
 
