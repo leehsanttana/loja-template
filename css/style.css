@@ -126,7 +126,7 @@ h1, h2{
     width: 60%;
     position: relative;
     bottom: -100%;
-    font-size: .8em !important;
+    font-size: .6em !important;
     transition: .3s ease-in-out !important;
 }
 
