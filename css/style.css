@@ -123,10 +123,10 @@ h1, h2{
 .botao{
     visibility: hidden;
     opacity: 0;
-    width: 80%;
+    width: 60%;
     position: relative;
     bottom: -100%;
-    font-size: .9em;
+    font-size: .8em !important;
     transition: .3s ease-in-out !important;
 }
 
@@ -231,6 +231,16 @@ footer{
         text-align: center;
         display: list-item;
         border-bottom: 2px solid var(--link-color-hover);
+    }
+
+    .botao{
+        visibility: hidden;
+        opacity: 0;
+        width: 80%;
+        position: relative;
+        bottom: -100%;
+        font-size: .9em;
+        transition: .3s ease-in-out !important;
     }
     
     .m-img{
