@@ -404,3 +404,7 @@ footer{
     opacity: 1;
   }
 
+.btn-collapse{
+    transform: rotate(180deg);
+    transition: .5s ease;
+}

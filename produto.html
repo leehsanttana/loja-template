@@ -140,7 +140,7 @@
                 </a>
                 <ul class="nav flex-column mt-4">
                     <li class="border border-top-0 border-left-0 border-right-0 py-4">
-                        <span data-toggle="collapse" data-target="#caracteristica"><h4>Características do Produtos<i class="ml-5 fas fa-angle-down"></i></i></h4></span>
+                        <span data-toggle="collapse" data-target="#caracteristica" onclick="openCollapse()"><h4>Características do Produtos<i id="btnCollapse" class="ml-5 fas fa-angle-up"></i></i></h4></span>
                         <div id="caracteristica" class="collapse show">
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque harum modi voluptatum distinctio
@@ -150,7 +150,7 @@
                         </div>
                     </li>
                     <li class="border border-top-0 border-left-0 border-right-0 py-4">
-                        <span data-toggle="collapse" data-target="#politicas"><h4>Políticas de Reembolso<i class="ml-5 fas fa-angle-down"></i></h4></span>
+                        <span data-toggle="collapse" data-target="#politicas" onclick="openCollapse2()"><h4>Políticas de Reembolso<i id="btnCollapse2" class="ml-5 fas fa-angle-down"></i></h4></span>
                         <div id="politicas" class="collapse">
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque harum modi voluptatum distinctio
@@ -230,6 +230,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+
+        function openCollapse(){
+        document.getElementById("btnCollapse").classList.toggle('btn-collapse');
+        
+        }
+        
+        function openCollapse2(){
+        document.getElementById("btnCollapse2").classList.toggle('btn-collapse');
+        }
+        
+    </script>
 
     <script src="https://kit.fontawesome.com/4783fe1c33.js" crossorigin="anonymous"></script>
 
